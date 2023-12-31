@@ -3,6 +3,8 @@
 
 <table class="link">
   <tbody>
-    <td><%= link_to 'Edit',"/books/#{@book.id}/edit" %></td>
+    <td><%= link_to 'Edit',book_path(@book.id) + "/edit" %></td>
+    <td>|</td>
     <td><%= link_to 'Back', "/books" %></td>
   </tbody>
+</table>
